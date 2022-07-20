@@ -61,6 +61,19 @@ body{
 
 /*---back-grounds color and image---*/
 
+.bgMostaza{
+	background-color: rgba(202, 154, 42, 1);
+}
+
+.bgLima2{
+	background-color: rgba(219, 242, 38, 1);
+	font-size: 1.85rem;	
+}
+
+.borderContacto{
+	border: 5px solid #F27457;
+}
+
 .bgDarkArena{
 	background-color: rgba(165, 135, 117, 1);
 	border-bottom: 2px solid rgba(191, 101, 93, 1);
@@ -81,7 +94,7 @@ body{
 
 .bgGreen{
 	background-color: rgba(3, 191, 156, 1);
-	font-size: 1rem;
+	font-size: 2rem;
 	margin: 1%;
 	text-align: center;
 }
@@ -89,15 +102,24 @@ body{
 .bgImg{
 	background-image: url(../img/palmeras.png);
 	background-repeat: no-repeat;
-	font-size: 2rem;
+	font-size: 4rem;
+	height: fit-content;
 }
 
 .bgLila{
 	background-color: rgba(204, 182, 179, 1);
 }
 
+.bgCerrado{
+	background-color: rgba(165, 112, 101, 1);
+}
+
+
 .ulLi-contacto{
 	list-style: none;
+	font-size: 1.5rem;
+	font-weight: 600;
+	align-items: flex-start;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -125,7 +147,7 @@ body{
 /*---PROPIEDADES XADRES---*/
 
 .container{
-	padding: 3%;
+	padding: 1%;
 	display: flex;
 }
 
@@ -155,6 +177,10 @@ body{
 
 .justifyCcenter{
 	justify-content: center;
+}
+
+.justifyEnd{
+	justify-content: flex-end;
 }
 
 .justifyCsb{
@@ -274,13 +300,15 @@ body{
 	list-style: none;
 }
 
+
 .mainNos li{
 	list-style: none;
 }
 
 /* --hover= color rosa al pasar sobre las pags*/
 .nav li:hover{
-	background-color: rgba(242, 48, 4, 1);
+	background-color: rgba(242, 48, 4, 1);	
+	color: #252525;
 }
 
 .nav a{
@@ -370,6 +398,8 @@ body{
 }
 /*termina = CSS -- GRIDS -- INDEX*/
 
+/*BOOTSTRAP*/
+
 
 /*----------------------RESPONSIVE- DESIGN -------------------*/
 /*---MEDIA QUERY - MOBILE LAST = MAX-WIDTH -(mobile-first = min-width---*/
@@ -450,6 +480,11 @@ body{
 	.mainPromo h3{
 		background-color: rgba(117, 177, 172, 1);
 	}
+
+	.pPromo{
+		.font-size: 1rem;
+	}
+
 		/*----media para NOSOTRES----*/
 	.mainNos{
 		background-image: url(../img/fondo-arena2.png);
@@ -475,14 +510,12 @@ body{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-	} 	
+	} 
 
-	.mainContacto ul{
-		background-color: rgba(242, 198, 193, 1);
-		font-size: 1rem;
-		font-weight: 500;
-		align-content: space-between;
-	}
+	.mainContacto h1{
+		font-size: 2rem;
+		text-align: center;
+	}	
 
 	.mainContacto h3{
 			display: none;
@@ -497,11 +530,18 @@ body{
 		padding: 5%;
 	}
 
+	.mainContacto div{
+		display: flex;
+		flex-direction: column;
+		font-size: 1rem;
+		align-content: space-between;
+	}
+
 	.mainContacto form{
 		width: 85%;
 		font-size: 1rem;
 		flex-direction: row;
-		align-content: space-between;
+		align-content: center;
 	}
 }
 
@@ -627,6 +667,10 @@ body{
 	.mainContacto article{
 		font-size: 30%;
 		justify-items: center;
+	}
+
+	.mainContacto h1{
+		font-size: 3rem;
 	}
 	.mainContacto h2{
 		font-size: 1.5rem;

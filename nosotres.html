@@ -6,33 +6,45 @@
 	<title>Halawai Bar</title>
 	<link rel="shortcut icon" href="img/favicon.png">
 	<script src="https://kit.fontawesome.com/36aacb5640.js" crossorigin="anonymous"></script>
+	
+	   	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    	<!-- Halawai Bar CSS -->
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 	<header>
-		<nav class="nav">
-			<a href="index.html">
-				<img src="img/logo.png" alt="Logo Halawai Bar - Una esquina, un bar, una playa">
-			</a>
-			<ul class="textRight">
-				<li>
-					<a href="menu.html">MENU</a>
-				</li>
+		<!-- inicia Bootstrap navBar-->
+      <nav class="navbar navbar-expand-md nav bgMostaza container-fluid">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo Halawai Bar - Una esquina, un bar, una playa">
+          </a>
+          <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-				<li>
-					<a href="promociones.html">PROMOCIONES</a>
-				</li>
-
-				<li>
-					<a href="nosotres.html">NOSOTRES</a>
-				</li>
-
-				<li>
-					<a href="contacto.html">CONTACTO</a>
-				</li>
-			</ul>
-		</nav>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-reset" aria-current="page" href="menu.html">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-reset" href="promociones.html">PROMOCIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-reset" aria-current="page" href="nosotres.html">NOSOTRES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-reset" aria-current="page" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+     </nav>
+      <!-- termina Bootstrap navBar-->
 	<!-- ends nav -->
 	</header>
 	<!-- ends header -->
@@ -42,14 +54,8 @@
 		<h2 class="textCenter nombrePag">NOSOTRES</h2>
 
 		<div class="containter flexDrow justifyCsb alignIcenter">
-			<div>
-				<p class="bgLima text center textDark">Te dejamos unas fotos para que vayas conociendo el bar, pero nada mejor que pasar a verlo en persona!
+				<p class="bgLima textCenter textDark">Te dejamos unas fotos para que vayas conociendo el bar, pero nada mejor que pasar a verlo en persona!
 				</p>
-			</div>
-
-			<div class="container alignIcenter">
-				<img src="img/fondo-frenti.png" alt="">
-			</div>
 		</div>
 
 		<section class="container flexDrow justifyCsb">
@@ -57,7 +63,7 @@
 				<img class="imgL" src="img/h-hula.png" alt="hamburguesa-y-cerveza">
 			</div>
 
-			<ul class="bgImg">
+			<ul class="bgImg ulLi-contacto container justifyEnd">
 				<li>CERVEZA ARTESANAL</li>
 				<li>TRAGOS DE AUTOR</li>
 				<li>PARRILLA</li>
@@ -69,29 +75,64 @@
 		</section>
 
 		<div>
-			<p class="bgGreen">TE ESPERAMOS DE MIERCOLES A DOMINGOS, A PARTIR DE LAS 18 HS!
+			<p class="bgGreen textGrueso">TE ESPERAMOS DE MIERCOLES A DOMINGOS, A PARTIR DE LAS 18 HS!
 			</p>
 		</div>
 
-		<article class="containerNos bgLila">
-			<div class="column">
-				<img src="img/fondo-frenti.png" alt="frente-barra">
-				<img src="img/fritas.png" alt="papas-fritas">
-				<img src="img/mascara.png" alt="mascara">
-				<img src="img/h-hula.png" alt="hamburguesa-hula">
-				<img src="img/car.png" alt="car-dibujo">
-				<img src="img/ron.png" alt="bebida-ron">
-			</div>
+<!-- carousel de img - Nosotres -->
 
-			<div class="column">
-				<img src="img/tragos-barra.png" alt="tragos-barra">
-				<img src="img/barra-gente.png" alt="barra-gente">
-				<img src="img/falafel.png" alt="falafel">
-				<img src="img/buñuelos.png" alt="buñuelos">
-				<img src="img/h-hongo-birra.png" alt="hamburguesa-hongos">
-				<img src="img/take-away.png" alt="take-away">
-			</div>
-		</article> 
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      </div>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/fondo-frenti.png" class="d-block w-100" alt="frente-barra">
+        </div>        
+        <div class="carousel-item">
+          <img src="img/fritas.png" class="d-block w-100" alt="papas-fritas-halawa-especial-edition">
+        </div>
+        <div class="carousel-item">
+          <img src="img/h-hula.png" class="d-block w-100" alt="hamburguesa-hula">
+        </div>
+        <div class="carousel-item">
+          <img src="img/barra-gente.png" class="d-block w-100" alt="gente-barra">
+        </div>
+        <div class="carousel-item">
+          <img src="img/h-hongo-birra.png" class="d-block w-100" alt="hamburgesa-con-hongos">
+        </div>
+        <div class="carousel-item">
+          <img src="img/falafel.png" class="d-block w-100" alt="falafel">
+        </div>
+        <div class="carousel-item">
+          <img src="img/ron.png" class="d-block w-100" alt="trago-con-ron">
+        </div>
+        <div class="carousel-item">
+          <img src="img/buñuelos.png" class="d-block w-100" alt="bunuelos">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+ <!-- BOOTSTRAP termine carousel de img - Nosotres -->
 	</main>
 
 	<footer class="footer">
@@ -109,5 +150,8 @@
 
 		<h4 class="textRight textGrueso">Ferrari 302, Villa Crespo - CABA</h4>
 	</footer>
+
+	    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
