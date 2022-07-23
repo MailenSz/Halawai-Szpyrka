@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 
 *{
-	font-family:'Open Sans', sans-serif ;
+	font-family:'Open Sans', sans-serif;
 	padding: 0;
 	margin: 0;
 }
@@ -114,7 +114,6 @@ body{
 	background-color: rgba(165, 112, 101, 1);
 }
 
-
 .ulLi-contacto{
 	list-style: none;
 	font-size: 1.5rem;
@@ -200,33 +199,6 @@ body{
 .alignCsb{
 	align-content: space-between;
 }
-
-/*---PROPIEDADES GALERIA "NOSOTRES"---*/
-
-.containerNos{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	padding: 5px;
-	width: 50%;
-	align-content: center;
-}
-
-.column{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: center;
-}
-
-.column img{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-}
-
 
 /*---PROPIEDADES HIJXS---*/
 
@@ -335,7 +307,7 @@ body{
 	margin: 1rem;
 }
 .header h2{
-	border-bottom: solid #F27457 5px;
+	border-bottom: 5px solid #F27457;
 }
 
 /* --clase MAIN--HIJX*/
@@ -355,9 +327,9 @@ body{
 }
 
 .aside p{
-	font-size: 1.8rem;
-	text-align: center;
-	background-color: rgba(219, 242, 38, 1);
+	font-size: 1.5rem;
+	text-align: flex-start;
+	background-color: rgba(165, 135, 117, 1);
 	border: 3px solid #F27457;
 }
 
@@ -398,7 +370,29 @@ body{
 }
 /*termina = CSS -- GRIDS -- INDEX*/
 
-/*BOOTSTRAP*/
+/*---BOOTSTRAP---*/
+/*--carrousel de img en NOSOTRES---*/
+.carrouselImg{
+	display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+/*--CONTACTO---*/
+
+.contactI{
+	max-width: 700px;
+}
+.contactL{
+	width: 19rem;
+}
+.divContact{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+}
 
 
 /*----------------------RESPONSIVE- DESIGN -------------------*/
@@ -482,7 +476,7 @@ body{
 	}
 
 	.pPromo{
-		.font-size: 1rem;
+		font-size: 1rem;
 	}
 
 		/*----media para NOSOTRES----*/
@@ -582,7 +576,7 @@ body{
 		font-size: 2rem;
 	}
 	.header h2{
-		border-bottom: solid rgba(242, 48, 4, 1); 3px;
+		border-bottom: 3px solid rgba(242, 48, 4, 1);
 		font-size: 1.5rem;
 	}
 
@@ -591,11 +585,11 @@ body{
 	}
 
 	.aside p{
-		background-color: rgba(2, 140, 89, 1);;
+		background-color: rgba(2, 140, 89, 1);
 	}
 
 	.footer h3{
-		background-color: rgba(117, 177, 172, 1);;
+		background-color: rgba(117, 177, 172, 1);
 	}
 
 		/*----media para MENU----*/
@@ -605,7 +599,7 @@ body{
 	.mainMenug h2{
 		font-size: 1rem;
 		background-color: rgba(214, 212, 142, 1);
-		color: rgba(4, 40, 63, 1);;
+		color: rgba(4, 40, 63, 1);
 	}
 
 		/*----media para PROMOS----*/
@@ -645,18 +639,37 @@ body{
 	}
 
 	.header{
-		font-size: 1rem;
+		font-size: 2rem;
 		width: 50%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.header h1{
-		font-size: 1rem;
+		font-size: 1.5rem;
+		width: 80%;
 	}
 	.header h2{
-		font-size: 1rem;
+		font-size: 1.5rem;
+		width: 80%;
+	}
+
+
+	.imgMg{
+		display: none;
 	}
 
 	.aside p{
+		display: none;
+	}
+
+	.ulLi-contacto{
+		display: none;
+	}
+
+	.imgL{
 		display: none;
 	}
 
@@ -669,11 +682,20 @@ body{
 		justify-items: center;
 	}
 
-	.mainContacto h1{
-		font-size: 3rem;
+	.bgLila{
+		background-color: rgba(242, 48, 4, 1);
+		font-size: 80%;
+		justify-content: center;
 	}
-	.mainContacto h2{
-		font-size: 1.5rem;
+
+	.contactMedia{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.smallNot{
+		display: none;
 	}
 
 }
