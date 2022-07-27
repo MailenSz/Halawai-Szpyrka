@@ -1,0 +1,60 @@
+//casa general BODY
+
+body{
+	background-image: $arenaL;
+	background-repeat: repeat
+}
+
+// nav
+
+.nav{
+	background-color: $mostaza;
+	ul{
+		margin: 1%;
+		display: flex;
+		justify-content: space-between;
+	}
+	li{
+		list-style: none;
+	}
+
+	img{
+		display: flex;
+		width: $w-50;
+	}
+}
+
+.nav-link{
+	font-weight: $font700;
+	font-size: $textM;
+	color: $negro;
+	padding: 10px;	
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+}
+
+.nav li:hover{
+	background-color: $rosaFuria;
+}
+
+//h1 h2
+.mainMenug{
+	.nombrePag{
+	color: $cemento;
+	text-align: $textCenter;
+	font-size: $textL;
+	padding: 0.5%;
+	margin: 0.5%;
+	background-color: $marronLila;
+	}
+
+	h1{
+	color: $negro;
+	text-align: center;
+	font-weight: 700;
+	}
+
+}
+
+

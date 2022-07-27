@@ -1,0 +1,21 @@
+//tamaño de img MENU
+.container{
+		display: flex;
+		padding: 3%;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	img{
+		width: $imgM;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.iNone{
+		justify-content: center;
+	}
+
+
+
+}
+

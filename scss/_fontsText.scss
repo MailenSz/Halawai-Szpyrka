@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+$fontFamily:'Open Sans', sans-serif;
+
+//TAMAÑOS de textos - rem
+
+$textXL: 2rem;
+$textL: 1.8rem;
+$textM: 1.5rem;
+$textS: 1rem;
+
+//GROSOR de texto
+
+$font300: 300;
+$font400: 400;
+$font600: 600;
+$font700: 700;
+$font800: 800;
+
+//UBICACION de texto
+
+$textCenter: center;
+$textRight: right;
+$textLeft: left;
+
+//colores de texto
+$negro: #252525;
+$cemento:rgba(233, 232, 230, 1);
+$rosaViejo:rgba(191, 101, 93, 1);
+
+//color HOVER NAV LI
+$rosaFuria: rgba(242, 48, 4, 1);
+
+//NO list
+$noList: list-style none;
+
+//NO decoration en LINK
+$noLink: text-decoration none;

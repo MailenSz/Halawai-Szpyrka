@@ -1,0 +1,37 @@
+/* --clase FOOTER--HIJX*/
+.footer { 
+	grid-area: footer; 
+	background-image: $arenaL;
+	background-repeat: repeat;
+}
+
+.footer h3{
+	text-align: center;
+	background-color: $pink;
+	padding: 1%;
+	margin: 1%;
+	border-bottom: $bordeFooterH3;
+}
+
+.footer p{
+	font-size: $textS;
+	font-weight: $font700;
+	color: $negro; 
+}
+
+.footer i{
+	font-size: $textXL;
+	top: 0;
+	left: 0;
+	color: $cemento;
+}
+
+.footer i:hover{
+	background-color: $rosaFuria;
+}
+
+.footer h4{
+	text-align: right;
+	font-size: $textM;
+	font-weight: $font600;
+}
