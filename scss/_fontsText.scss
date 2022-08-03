@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+$fontFamily:'Open Sans', sans-serif;
+
+//TAMAÑOS - rem - fontsize
+$rXL: 2rem;
+$rL: 1.8rem;
+$rM: 1.5rem;
+$rS: 1rem;
+$rXS: 0,3rem;
+
+//GROSOR de texto - weight
+
+$font300: 300;
+$font400: 400;
+$font600: 600;
+$font700: 700;
+$font800: 800;
+
+//ALTURA de text - line height
+$lineL: 2;
+$lineXL: 4;
+
+//UBICACION de texto
+$tCenter: center;
+$tRight: right;
+$tLeft: left;
+
+//colores de texto
+$negro: #252525;
+$cemento:rgba(233, 232, 230, 1);
+$rosaViejo:rgba(191, 101, 93, 1);
+
+//color HOVER
+$rosaFuria: rgba(242, 48, 4, 1);
+
+//NO list
+$noList: list-style none;
+
+//NO decoration en LINK
+$noLink: text-decoration none;

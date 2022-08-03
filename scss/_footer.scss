@@ -1,0 +1,69 @@
+/* --clase FOOTER--HIJX*/
+.footer { 
+	grid-area: footer; 
+	background-image: $arenaL;
+	background-repeat: repeat;
+	display: flex;
+	direction: row;
+	flex-wrap: wrap;
+	
+	h3{
+		display: flex;
+		flex-direction: row;
+		justify-content: $tCenter;
+		width: $w-100;
+		text-align: center;
+		background-color: $pink;
+		padding: 0,3rem;
+		margin: 0,3rem;
+		border-bottom: $bordeFooterH3;
+	}
+
+
+	h4{
+		display: flex;
+		flex-direction: row;
+		width: $w-100;
+		justify-content:$tLeft;
+		align-items:$tLeft;
+		color: $cemento;
+		font-weight: $font700;
+		background-color: $marronLila;
+		padding: 0;
+		margin: 0;
+	}
+
+	div{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: $w-100;
+		background-color: $marronLila;
+		justify-content: center;
+
+		a{
+			align-items: flex-start;
+			list-style: $noDeco;
+			text-decoration: $noDeco;			
+			& i{
+				font-size: $rL;
+				top: 0;
+				left: 0;
+				color: $cemento;
+				
+				&:hover{
+					background-color: $rosaFuria;
+				}
+			}
+		}
+
+		p{
+			display: flex;
+			font-size: $rS;
+			font-weight: $font600;
+			color: $negro; 
+			justify-content: $tCenter;
+			background-color:$rosaViejo;
+		}
+	}
+}

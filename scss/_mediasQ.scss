@@ -1,0 +1,218 @@
+/*----------------------RESPONSIVE- DESIGN -------------------*/
+/*---MEDIA QUERY - MOBILE LAST = MAX-WIDTH -(mobile-first = min-width---*/
+
+/*dispositivos tipo TABLET-INDEX-*/
+
+// INDEX + FOOTER
+@media (max-width: 768px) {
+	.containerGrid {
+		background-image: $arenaS;
+		background-repeat: repeat;
+		grid-template-areas:
+		    "nav nav nav nav"
+		    "header header header header"
+		    "main main main main"
+		    "aside aside aside aside"
+		    "footer footer footer footer";
+
+		.main{
+			display: flex;
+
+			img{
+				display: flex;
+				font-size: $imgM;
+			}
+
+			.aside p{
+				font-size:$rS;
+				font-weight: $font400;
+				margin: 1%;
+				background-color: $green;
+			}
+
+			.twoI{
+				display: $noDeco;
+			}
+		}
+	}
+//BODY
+	body{
+		background-image: $arenaS;
+		background-repeat: repeat;
+	}
+//FOTER
+	footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-image: $arenaS;
+		background-repeat: repeat;
+		& i:hover{
+			background-color: $rosaFuria;
+		}
+
+		h4{
+			justify-content: flex-start;
+		}
+
+		.final{
+			flex-direction: row;
+			justify-content: space-between;
+					
+			i{
+				justify-content: flex-start;
+			}
+
+			p{
+				font-size: $rM;
+				font-weight: $font700;
+				justify-content: flex-end;
+			}
+
+		}	
+	}
+
+//PROMOS
+	.mainPromo .container{
+		display: flex;
+		background-image: $palmera;
+		background-repeat: repeat;
+
+		img{
+			display: $noDeco;
+		}
+
+		p{
+			width: $w-100;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+//NOS
+	.mainNos{
+		display: flex;
+		flex-direction: column;
+
+		section{
+			display: flex;
+			flex-direction: column;
+
+			ul{
+				display: $noDeco;
+			}
+
+			p{
+				display: $noDeco;
+			}
+		}
+	}
+
+//CONTACTO
+	.mainContacto{
+		background-image: $arenaS;
+		background-repeat: repeat;
+		display: flex;
+		flex-direction: column;	
+
+		.contactO{
+			flex-direction: row;
+			flex-wrap: wrap;
+			background-color: $pink;
+			font-size: $rS;
+			align-content: center;
+
+			ul{
+				font-size: $w-50;
+			}
+
+			h3{
+				display: $noDeco;
+			}
+
+		   	p{
+			   	width: $w-50;
+				font-size: $rM;
+			}
+
+			img{
+				width: $w-50;
+			}
+
+			form{
+				width: 85%;
+				font-size: $rS;
+				flex-direction: row;
+				align-content: space-between;
+			}
+
+		}		
+
+	}
+
+}
+
+/*dispositivos tipo CELS - CHICOS*/
+//INDEX
+@media (max-width: 375px) {
+	header{
+		text-align: center;
+		margin: $rS;
+		h2{
+			font-size: $rXS;
+		}
+	}
+
+	.main{
+		img{
+			display: flex;
+			justify-content: center;
+			width: $imgS;
+		}
+
+		section{
+			display: $noDeco; 	
+		}
+	}
+//MENU
+	.mainMenug{
+		.imgM{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: $imgL;
+		}
+	}
+
+//PROMOS
+	.mainPromo{
+		display: flex;
+		flex-direction: column;
+		article h3{
+			display: $noDeco;
+		}
+		div p{
+			display: $noDeco;
+		}
+	}
+
+//CONTACTO
+	.mainContacto{
+		display: flex;
+		img{
+			display: $noDeco;
+		}
+
+		h3{
+			display: $noDeco;
+		}
+	}
+}
+
+
+/*dispositivos tipo CELS - MUYCHICOS/pantalla div*/
+@media (max-width: 320px) {
+	.mainContacto .contactI{
+		display: $noDeco;
+	}
+}

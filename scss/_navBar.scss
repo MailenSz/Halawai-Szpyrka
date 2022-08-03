@@ -1,0 +1,42 @@
+//casa general BODY
+
+body{
+	background-image: $arenaL;
+	background-repeat: repeat
+}
+
+// nav
+
+.nav{
+	grid-area: nav; 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-color: $mostaza;
+	ul{
+		margin: 1%;
+		display: flex;
+		justify-content: space-between;
+		li{
+			list-style: none;
+			&:hover{
+				background-color: $rosaFuria;
+			}
+		}
+	}
+	img{
+		display: flex;
+		width: $w-50;
+	}
+
+	a{
+		font-weight: $font700;
+		font-size: $rM;
+		color: $negro;
+		padding: 10px;	
+		display: flex;
+		flex-direction: row;
+		text-decoration: $noDeco;
+	}
+}

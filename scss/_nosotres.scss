@@ -1,0 +1,48 @@
+//MAIN
+.mainNos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+	section{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		
+		div{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			background-image: $agua;
+			font-size: $rM;
+
+			p{
+			width: $w-75;
+			font-size: $rL;
+			font-weight: $font600;
+			justify-content: center;
+			align-items: center;
+			color: $negro;
+			margin: 3%;
+			}
+		}
+
+		ul{
+			display: flex;
+			flex-direction: column;
+			background-image: $arenaS;
+			width: $w-30;
+			text-decoration: $noDeco;
+			list-style: $noDeco;
+			font-size: $rM;
+			font-weight: $font600;
+		}
+
+	}
+
+	.carrouselImg{
+		width: $w-100;
+		padding-bottom: 2%;
+		height: auto;
+	}
+}

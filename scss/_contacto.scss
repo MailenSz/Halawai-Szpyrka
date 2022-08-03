@@ -1,0 +1,62 @@
+// MAIN
+.mainContacto{
+	display: flex;
+	flex-direction: column;
+
+	div{
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		
+		.bgLila{
+			background-color: $lila;			
+
+			.card-img-top{
+				width: $w-75;
+			}
+
+			h2{
+				background-color: $lila; 
+				font-weight: $font600;
+			}
+
+			ul{
+				text-align: center;
+				font-size: $rM;
+				width: $w-100;
+				& .YoNo{
+					background-color: $cerrado;
+				}
+			}
+				
+		}
+		 
+	}
+
+	.contactI{
+		border-radius: $bordeContacto;
+		background-color: $lima;
+		font-size: $rXL;
+			
+		img{
+		width: $w-75;
+
+		}
+
+		h3{
+			font-size: $rL;
+		}
+
+		small{
+			font-weight: $font700;
+			color: $negro;
+		}
+
+	}
+
+	form{
+		flex-direction: column;
+		background-color: $marronLila;
+		font-size: $rM;
+		border: $bordeForm;
+	}
+}

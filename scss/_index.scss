@@ -1,0 +1,90 @@
+
+
+/* - - - GRID-CONTENEDOR - XADRE - - -*/
+.containerGrid{  
+	display: grid;
+	background-image: $arenaL;
+	background-repeat: repeat;
+ 	grid-template-columns: 2fr 2fr 2fr 1fr;
+  	grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    "main main main aside"
+    "main main main aside"
+    "footer footer footer footer";
+
+    /* --clase HEADER--HIJX*/
+	.header{ 
+		grid-area: header; 
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		min-height: 15vh;
+		width: $w-100;
+		padding: 2%;
+		margin: 1%;
+		h1{
+			display: flex;
+			margin:$rS;
+			justify-content: $tCenter;
+			text-align: center;
+		}
+		h2{
+			display: flex;
+			border-bottom: 5px solid $pink;
+			justify-content: center;
+			text-align: center;
+		}
+	}
+
+	.main {
+		 grid-area: main; 
+		 margin: $rS;
+		 display: flex;
+		 flex-direction: row;
+		 flex-wrap: wrap;
+		 justify-content: $tCenter;
+
+		.aside{ 
+			grid-area: aside; 
+			p{	
+				font-size:$rM;
+				height: 150px;
+				background-color:$lila;
+				margin: 1%;
+				justify-content: center;
+				text-align: center;
+				border: 5px solid $lima;
+			}
+		}
+
+			div{
+				display: flex;
+				flex-direction: row-reverse;
+				height: 100vh;
+				flex-wrap: nowrap;
+				width: $w-100;
+				padding: 1%;
+				margin: 2%;
+				justify-content: space-between;
+
+				.imgL {
+					width: $imgL;
+					justify-content: center;
+				}
+				.imgM {
+					width: $imgL;
+					justify-content: center;
+				}
+				.imgS {
+					width: $imgS;
+					padding: 1%;
+					align-items: center; 
+					justify-content: center;
+				}
+			}
+	}
+
+	/* --clase ASIDE--HIJX*/
+
+}

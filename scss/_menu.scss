@@ -1,0 +1,31 @@
+// HEADER
+.header{
+		color: $cemento;
+		text-align: center;
+		font-size: $rL;
+		padding: 0.5%;
+		margin: 0.5%;
+		background-color: $marronLila;
+
+		h2{
+			color: $negro;
+			font-size: $rXL;
+			font-weight: font600;
+		}
+}
+
+//tamaño de img MENU
+.mainMenug{
+	display: flex;
+	flex-direction: row;
+	padding: 3%;
+	div{
+		justify-content: center;
+		img{
+			width: $imgM;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+

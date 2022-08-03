@@ -1,0 +1,21 @@
+//animaciones LOGO index 
+
+.rotate:hover{
+	transform: rotateZ(-360deg);
+	cursor: pointer;
+	transition: transform 1s;	
+}
+
+@keyframes headerAnimation{
+	0%{background-color:$verdeOscuro;}
+	25%{background-color:$verdeMedio;}
+	50%{background-color:$verdeClaro;}
+	75%{background-color:$verdeMedio;}
+	100%{background-color:$verdeOscuro;}
+}
+
+.headerAnimation{
+	animation-name: headerAnimation;
+	animation-duration: 5s;
+	animation-iteration-count: 3;
+}
