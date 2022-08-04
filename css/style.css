@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+.btn, .btn-secondary, .btn-success {
+  background: linear-gradient(to top, rgb(2, 140, 89), rgb(1, 89, 57));
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+.btn:hover, .btn-secondary:hover, .btn-success:hover {
+  color: #252525;
+  cursor: pointer;
+}
+
+.btn-success {
+  border-radius: 8px;
+}
+
+.btn-secondary {
+  background: linear-gradient(to top, grey, #252525);
+  border-radius: 10px;
+}
+
 /* - - - GRID-CONTENEDOR - XADRE - - -*/
 .containerGrid {
   display: grid;
@@ -41,10 +62,15 @@
 }
 .containerGrid .main .aside {
   grid-area: aside;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .containerGrid .main .aside p {
-  font-size: 1.5rem;
-  height: 150px;
+  font-size: 1.8rem;
+  height: 250px;
   background-color: rgb(204, 182, 179);
   margin: 1%;
   justify-content: center;
@@ -53,7 +79,7 @@
 }
 .containerGrid .main div {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   height: 100vh;
   flex-wrap: nowrap;
   width: 100%;
@@ -115,6 +141,11 @@ body {
 }
 
 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   color: rgb(233, 232, 230);
   text-align: center;
   font-size: 1.8rem;
@@ -131,12 +162,19 @@ body {
 .mainMenug {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 3%;
 }
 .mainMenug div {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.mainMenug div img {
+.mainMenug img {
   width: 48%;
   justify-content: center;
   align-items: center;
@@ -244,27 +282,32 @@ body {
 .mainContacto {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
-.mainContacto div {
-  flex-direction: row-reverse;
+.mainContacto section {
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-.mainContacto div .bgLila {
+.mainContacto section .bgLila {
   background-color: rgb(204, 182, 179);
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.mainContacto div .bgLila .card-img-top {
-  width: 75%;
+.mainContacto section .bgLila img {
+  width: 28%;
 }
-.mainContacto div .bgLila h2 {
+.mainContacto section .bgLila h2 {
   background-color: rgb(204, 182, 179);
   font-weight: 600;
 }
-.mainContacto div .bgLila ul {
+.mainContacto section .bgLila ul {
   text-align: center;
   font-size: 1.5rem;
-  width: 100%;
+  width: 50%;
 }
-.mainContacto div .bgLila ul .YoNo {
+.mainContacto section .bgLila ul .YoNo {
   background-color: rgb(165, 112, 101);
 }
 .mainContacto .contactI {
@@ -273,7 +316,7 @@ body {
   font-size: 2rem;
 }
 .mainContacto .contactI img {
-  width: 75%;
+  width: 50%;
 }
 .mainContacto .contactI h3 {
   font-size: 1.8rem;
@@ -302,12 +345,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  text-align: center;
-  background-color: rgb(242, 198, 193);
+  background-color: rgb(3, 191, 156);
   padding: 0, 3rem;
   margin: 0, 3rem;
-  border-bottom: 3px solid #F27457;
+  border-bottom: 3px solid rgb(219, 242, 38);
 }
 .footer h4 {
   display: flex;
@@ -316,18 +359,19 @@ body {
   justify-content: left;
   align-items: left;
   color: rgb(233, 232, 230);
-  font-weight: 700;
+  font-weight: 600;
   background-color: rgb(165, 135, 117);
   padding: 0;
-  margin: 0;
+  margin: 0%;
 }
 .footer div {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   background-color: rgb(165, 135, 117);
-  justify-content: center;
 }
 .footer div a {
   align-items: flex-start;
@@ -345,11 +389,13 @@ body {
 }
 .footer div p {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-size: 1rem;
   font-weight: 600;
   color: #252525;
-  justify-content: center;
-  background-color: rgb(191, 101, 93);
+  background-color: rgb(2, 114, 73);
 }
 
 /*----------------------RESPONSIVE- DESIGN -------------------*/

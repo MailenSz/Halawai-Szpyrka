@@ -1,0 +1,43 @@
+//EXTEND 
+//use para ENVIAR-CANCELAR en CONTACTO
+.btn{
+	background: linear-gradient(to top, $verdeOscuro, $verdeClaro);
+	border: none;
+	justify-content: center;
+	align-items: center;
+	margin: 1%;
+	&:hover{
+		color: $negro;
+		cursor: pointer;
+	}
+}
+
+.btn-success{
+	@extend .btn;
+	border-radius: 8px;
+}
+
+.btn-secondary{
+	@extend .btn;
+	background: linear-gradient(to top, grey, $negro);
+	border-radius: 10px;
+}
+
+//MIXINS
+//mixin para displayFLEX - aplicado a .mainMenug en _menu.scss
+@mixin d-flex($flexDir, $justifyC, $alignI,){
+	display: flex;
+	flex-direction: $flexDir;
+	justify-content: $justifyC;
+	align-items: $alignI;
+}
+
+//MAPS
+//get-map para colores ANIMACION INDEX
+$animIndex:(
+		'vOscuro': rgba(2, 140, 89, 1),
+		'vMedio': rgba(2, 114, 73, 1),
+		'vClaro': rgba(1, 89, 57, 1));
+
+
+

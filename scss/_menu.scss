@@ -1,5 +1,7 @@
 // HEADER
 .header{
+		@include d-flex(row, center, center);
+		flex-wrap: wrap;
 		color: $cemento;
 		text-align: center;
 		font-size: $rL;
@@ -16,16 +18,19 @@
 
 //tamaño de img MENU
 .mainMenug{
-	display: flex;
-	flex-direction: row;
-	padding: 3%;
-	div{
-		justify-content: center;
+		@include d-flex(row, center, center);
+		flex-wrap: wrap;
+		padding: 3%;
+	
+		div{
+			@include d-flex(row, center, center);
+			flex-wrap: wrap;
+		}
 		img{
 			width: $imgM;
 			justify-content: center;
 			align-items: center;
 		}
-	}
 }
+
 

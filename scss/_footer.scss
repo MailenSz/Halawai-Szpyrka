@@ -8,12 +8,9 @@
 	flex-wrap: wrap;
 	
 	h3{
-		display: flex;
-		flex-direction: row;
-		justify-content: $tCenter;
+		@include d-flex(row, center, center);
 		width: $w-100;
-		text-align: center;
-		background-color: $pink;
+		background-color: $green;
 		padding: 0,3rem;
 		margin: 0,3rem;
 		border-bottom: $bordeFooterH3;
@@ -27,20 +24,18 @@
 		justify-content:$tLeft;
 		align-items:$tLeft;
 		color: $cemento;
-		font-weight: $font700;
+		font-weight: $font600;
 		background-color: $marronLila;
 		padding: 0;
-		margin: 0;
+		margin: 0%;
 	}
 
 	div{
-		display: flex;
-		flex-direction: row;
+		@include d-flex(row, flex-start, center);
 		flex-wrap: wrap;
 		width: $w-100;
 		background-color: $marronLila;
-		justify-content: center;
-
+		
 		a{
 			align-items: flex-start;
 			list-style: $noDeco;
@@ -57,13 +52,12 @@
 			}
 		}
 
-		p{
-			display: flex;
+		& p{
+			@include d-flex(row, center, center);
 			font-size: $rS;
 			font-weight: $font600;
 			color: $negro; 
-			justify-content: $tCenter;
-			background-color:$rosaViejo;
+			background-color:$verdeMedio;
 		}
 	}
 }

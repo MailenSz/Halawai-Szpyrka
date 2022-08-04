@@ -47,9 +47,14 @@
 
 		.aside{ 
 			grid-area: aside; 
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: $w-100;
 			p{	
-				font-size:$rM;
-				height: 150px;
+				font-size:$rL;
+				height: 250px;
 				background-color:$lila;
 				margin: 1%;
 				justify-content: center;
@@ -60,7 +65,7 @@
 
 			div{
 				display: flex;
-				flex-direction: row-reverse;
+				flex-direction: row;
 				height: 100vh;
 				flex-wrap: nowrap;
 				width: $w-100;

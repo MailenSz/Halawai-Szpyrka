@@ -2,16 +2,21 @@
 .mainContacto{
 	display: flex;
 	flex-direction: column;
+	width: $w-100;
 
-	div{
-		flex-direction: row-reverse;
+	section{
+		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		
 		.bgLila{
-			background-color: $lila;			
+			background-color: $lila;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: center;		
 
-			.card-img-top{
-				width: $w-75;
+			img{
+				width: $w-30;
 			}
 
 			h2{
@@ -22,7 +27,7 @@
 			ul{
 				text-align: center;
 				font-size: $rM;
-				width: $w-100;
+				width: $w-50;
 				& .YoNo{
 					background-color: $cerrado;
 				}
@@ -38,7 +43,7 @@
 		font-size: $rXL;
 			
 		img{
-		width: $w-75;
+		width: $w-50;
 
 		}
 
