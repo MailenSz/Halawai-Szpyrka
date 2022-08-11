@@ -1,6 +1,6 @@
 // HEADER
 .header{
-		@include d-flex(row, center, center);
+		@include d-flex(column, center, center);
 		flex-wrap: wrap;
 		color: $cemento;
 		text-align: center;

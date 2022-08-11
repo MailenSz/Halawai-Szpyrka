@@ -24,7 +24,7 @@
 }
 
 //MIXINS
-//mixin para displayFLEX - aplicado a .mainMenug en _menu.scss
+//mixin para displayFLEX -
 @mixin d-flex($flexDir, $justifyC, $alignI,){
 	display: flex;
 	flex-direction: $flexDir;

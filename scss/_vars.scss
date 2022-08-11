@@ -14,7 +14,7 @@ $cerrado:rgba(165, 112, 101, 1);
 //imagenes de fondo
 $arenaL:url(../img/fondo-arena.png);
 $arenaS:url(../img/fondo-arena2.png);
-$ocean:url(../img/fondo-mar.png);
+$ocean:url(../img/oceano.png);
 $palmera:url(../img/palmeras.png);
 $agua:url(../img/agua.png);
 
@@ -35,7 +35,16 @@ $imgS: 35%;
 $imgM: 48%;
 $imgL: 85%;
 
+//tamaños en REM
+$rXS: 0.3rem;
+$rS: 0.8rem;
+$rM: 1.5rem;
+$rL: 1.8rem;
+$rXL: 2.3rem;
+
 //border bottom Footer
+$bordeH2: 4px solid $pink;
+$bordeAside: 4px solid $lima;
 $bordeFooterH3: 3px solid $lima;
 $bordeContacto: 3px solid $verdeOscuro;
 $bordeForm: 3px solid rgba(191, 101, 93, 1);

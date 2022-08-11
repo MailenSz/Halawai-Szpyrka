@@ -1,33 +1,32 @@
 // MAIN
 .mainContacto{
-	display: flex;
-	flex-direction: column;
+	@include d-flex(column, space-between, center);
 	width: $w-100;
 
 	section{
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		@include d-flex(row, center, center);
+		flex-wrap: nowrap;
+		width: $w-100;
+		background-color: $lila;
 		
-		.bgLila{
+		article{
+			@include d-flex(row, center, center);
 			background-color: $lila;
-			flex-direction: column;
-			flex-wrap: wrap;
-			justify-content: center;		
+			flex-wrap: wrap;	
 
 			img{
-				width: $w-30;
-			}
-
-			h2{
-				background-color: $lila; 
-				font-weight: $font600;
+				width: $w-75;
 			}
 
 			ul{
 				text-align: center;
 				font-size: $rM;
-				width: $w-50;
+				width: $w-75;
+				li{
+					background-color: $lila;
+					text-decoration: $noDeco;
+					list-style: $noDeco;
+				}
 				& .YoNo{
 					background-color: $cerrado;
 				}
@@ -38,17 +37,22 @@
 	}
 
 	.contactI{
+		@include d-flex(column, center, center);
+		flex-wrap: nowrap;
 		border-radius: $bordeContacto;
 		background-color: $lima;
-		font-size: $rXL;
+		font-size: $rL;
+		width: $w-100;
+		margin: 0,5%;
 			
 		img{
-		width: $w-50;
+		width: $w-30;
+		align-items: center;
 
 		}
 
 		h3{
-			font-size: $rL;
+			font-size: $rM;
 		}
 
 		small{
@@ -59,9 +63,13 @@
 	}
 
 	form{
-		flex-direction: column;
+		@include d-flex(column, space-between, flex-start);
 		background-color: $marronLila;
-		font-size: $rM;
+		width: $w-75;
 		border: $bordeForm;
+	}
+
+	div{
+		width: $w-100;
 	}
 }

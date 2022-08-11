@@ -5,7 +5,7 @@
 	display: grid;
 	background-image: $arenaL;
 	background-repeat: repeat;
- 	grid-template-columns: 2fr 2fr 2fr 1fr;
+ 	grid-template-columns: 1fr 2fr 2fr 1fr;
   	grid-template-areas:
     "nav nav nav nav"
     "header header header header"
@@ -16,80 +16,65 @@
     /* --clase HEADER--HIJX*/
 	.header{ 
 		grid-area: header; 
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		min-height: 15vh;
+		@include d-flex(column, center, center);
+		text-align: center;
+		flex-wrap: wrap;
+		font-size: $rL;
+		min-height: 20vh;
 		width: $w-100;
-		padding: 2%;
-		margin: 1%;
+		padding: 0,5%
 		h1{
-			display: flex;
-			margin:$rS;
-			justify-content: $tCenter;
-			text-align: center;
+			@include d-flex(row, center, center);
+			width: $w-100;
+			margin: 0,5%;
 		}
 		h2{
-			display: flex;
-			border-bottom: 5px solid $pink;
-			justify-content: center;
-			text-align: center;
+			@include d-flex(row, center, center);
+			border-bottom: $bordeH2;
 		}
 	}
 
 	.main {
 		 grid-area: main; 
-		 margin: $rS;
-		 display: flex;
-		 flex-direction: row;
+		 @include d-flex(row, center, center);
 		 flex-wrap: wrap;
-		 justify-content: $tCenter;
 
 		.aside{ 
 			grid-area: aside; 
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
+			@include d-flex(row, center, center);
 			width: $w-100;
+
 			p{	
-				font-size:$rL;
-				height: 250px;
-				background-color:$lila;
+				@include d-flex(row, center, center);
+				font-size:$rM;
+				height: 200px;
 				margin: 1%;
-				justify-content: center;
-				text-align: center;
-				border: 5px solid $lima;
+				background-color:$lila;
+				border: $bordeAside;
 			}
 		}
 
 			div{
-				display: flex;
-				flex-direction: row;
+				@include d-flex(row, space-between, center,);
 				height: 100vh;
 				flex-wrap: nowrap;
 				width: $w-100;
 				padding: 1%;
 				margin: 2%;
-				justify-content: space-between;
 
 				.imgL {
 					width: $imgL;
-					justify-content: center;
+					@include d-flex(row, center, flex-end);
 				}
 				.imgM {
 					width: $imgL;
-					justify-content: center;
+					@include d-flex(row, center, center);
 				}
 				.imgS {
 					width: $imgS;
-					padding: 1%;
-					align-items: center; 
-					justify-content: center;
+					@include d-flex(row, center, center);
 				}
 			}
 	}
-
-	/* --clase ASIDE--HIJX*/
 
 }

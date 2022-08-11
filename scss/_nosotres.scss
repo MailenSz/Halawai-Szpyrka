@@ -5,37 +5,35 @@
 	flex-wrap: wrap;
 	
 	section{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		@include d-flex(row, space-between, center);
+		text-align: center;
+		height: $lineXL;
 		
 		div{
-			display: flex;
-			flex-direction: row;
+			@include d-flex(row, space-between, center);
 			flex-wrap: wrap;
 			background-image: $agua;
-			font-size: $rM;
+			line-height: $lineL;
 
 			p{
+			@include d-flex(column, center, center);
 			width: $w-75;
 			font-size: $rL;
 			font-weight: $font600;
-			justify-content: center;
-			align-items: center;
 			color: $negro;
 			margin: 3%;
 			}
 		}
 
 		ul{
-			display: flex;
-			flex-direction: column;
+			@include d-flex(column, space-evenly, center);
 			background-image: $arenaS;
 			width: $w-30;
+			height: 73vh;
 			text-decoration: $noDeco;
 			list-style: $noDeco;
 			font-size: $rM;
-			font-weight: $font600;
+			font-weight: $font700;
 		}
 
 	}

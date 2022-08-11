@@ -9,17 +9,12 @@ body{
 
 .nav{
 	grid-area: nav; 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-end;
+	@include d-flex(row, space-between, center);
 	background-color: $mostaza;
 	ul{
-		margin: 1%;
-		display: flex;
-		justify-content: space-between;
+		@include d-flex(row, space-between, center);
 		li{
-			list-style: none;
+			list-style: $noDeco;
 			&:hover{
 				background-color: $rosaFuria;
 			}
@@ -30,13 +25,11 @@ body{
 		width: $w-50;
 	}
 
-	a{
+	a{	
+		@include d-flex(row, space-between, center);
 		font-weight: $font700;
 		font-size: $rM;
 		color: $negro;
-		padding: 10px;	
-		display: flex;
-		flex-direction: row;
 		text-decoration: $noDeco;
 	}
 }

@@ -3,47 +3,42 @@
 	grid-area: footer; 
 	background-image: $arenaL;
 	background-repeat: repeat;
-	display: flex;
-	direction: row;
+	@include d-flex(row, center, center);
 	flex-wrap: wrap;
 	
 	h3{
 		@include d-flex(row, center, center);
 		width: $w-100;
 		background-color: $green;
-		padding: 0,3rem;
-		margin: 0,3rem;
+		padding: $rXS;
+		margin: $rXS;
 		border-bottom: $bordeFooterH3;
 	}
 
 
 	h4{
-		display: flex;
-		flex-direction: row;
+		@include d-flex(row, center, center);
 		width: $w-100;
-		justify-content:$tLeft;
-		align-items:$tLeft;
 		color: $cemento;
 		font-weight: $font600;
 		background-color: $marronLila;
 		padding: 0;
-		margin: 0%;
+		margin: 0;
 	}
 
 	div{
-		@include d-flex(row, flex-start, center);
+		@include d-flex(column, center, center);
 		flex-wrap: wrap;
 		width: $w-100;
 		background-color: $marronLila;
 		
 		a{
-			align-items: flex-start;
+			@include d-flex(row, center, center);
+			flex-wrap: nowrap;
 			list-style: $noDeco;
 			text-decoration: $noDeco;			
-			& i{
+			i{
 				font-size: $rL;
-				top: 0;
-				left: 0;
 				color: $cemento;
 				
 				&:hover{
@@ -52,8 +47,8 @@
 			}
 		}
 
-		& p{
-			@include d-flex(row, center, center);
+		p{
+			@include d-flex(row, right, center);
 			font-size: $rS;
 			font-weight: $font600;
 			color: $negro; 

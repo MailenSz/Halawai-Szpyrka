@@ -1,28 +1,21 @@
 // MAIN
 
 .mainPromo{
-	display: flex;
+	@include d-flex(column, center, center);
 	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
-	padding: 3%;
+	padding: 1%;
 
 	article{
-		display: flex;
-		padding: 3%;
-		flex-direction: column;
-		align-items: center;
-		background-image: $ocean; 	
+		@include d-flex(column, center, center);
+		padding: 1%;
 
 		h3{
-			display: flex;
+			@include d-flex(row, center, center);
 			width: $imgL;
-			height: auto;
+			height: 10vh;
 			background-color: $lima;
-			justify-content: center;
 			text-align: $tCenter;
 			font-weight: $font700;
-			line-height: $lineL;
 			}
 
 		p{
@@ -30,24 +23,21 @@
 			font-weight: $font700;
 			font-size: $rM;
 			width: $imgL;
-			line-height: $lineL;
 			justify-content: center;
+			height: 20vh;
 		}
 	}
 
 	div{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		background-image: $ocean;
+		@include d-flex(row, space-between, center);
 
-		p{
-			background-color: $green;
-			text-align: $tCenter;
+		p{	
+			@include d-flex(column, space-between, center);
+			flex-wrap: wrap;
+			background-image: $ocean;
+			height: 100vh;
 			font-weight: $font700;
-			line-height: $lineL;
-			font-size: $rM;
+			font-size: $rL;
 		}
 
 		div{
@@ -55,8 +45,7 @@
 			font-size: $rM;
 
 			img{
-				display: flex;
-				justify-content: center;
+				@include d-flex(row, center, center);
 				font-size: $rXS;
 				height: 100vh;
 			}

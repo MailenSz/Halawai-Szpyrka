@@ -26,8 +26,9 @@
 			.aside p{
 				font-size:$rS;
 				font-weight: $font400;
+				color: $pink;
 				margin: 1%;
-				background-color: $green;
+				background-image: $agua;
 			}
 
 			.twoI{
@@ -42,9 +43,7 @@
 	}
 //FOTER
 	footer{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		@include d-flex(row, space-between, center);
 		background-image: $arenaS;
 		background-repeat: repeat;
 		& i:hover{
@@ -64,9 +63,10 @@
 			}
 
 			p{
-				font-size: $rM;
-				font-weight: $font700;
+				font-size: $rS;
+				font-weight: $font400;
 				justify-content: flex-end;
+				align-items: flex-end;
 			}
 
 		}	
