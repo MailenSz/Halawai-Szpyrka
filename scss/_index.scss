@@ -1,5 +1,4 @@
 
-
 /* - - - GRID-CONTENEDOR - XADRE - - -*/
 .containerGrid{  
 	display: grid;
@@ -16,65 +15,58 @@
     /* --clase HEADER--HIJX*/
 	.header{ 
 		grid-area: header; 
-		@include d-flex(column, center, center);
+		@include d-flex(row, center, center);
 		text-align: center;
 		flex-wrap: wrap;
 		font-size: $rL;
 		min-height: 20vh;
-		width: $w-100;
-		padding: 0,5%
 		h1{
 			@include d-flex(row, center, center);
 			width: $w-100;
-			margin: 0,5%;
 		}
 		h2{
 			@include d-flex(row, center, center);
 			border-bottom: $bordeH2;
+			margin-bottom: 1%;
 		}
 	}
 
 	.main {
 		 grid-area: main; 
-		 @include d-flex(row, center, center);
-		 flex-wrap: wrap;
+		 @include d-flex(column, center, center);
 
 		.aside{ 
 			grid-area: aside; 
-			@include d-flex(row, center, center);
-			width: $w-100;
+			width: $w-75;
+			padding-top: 1%;
 
 			p{	
-				@include d-flex(row, center, center);
 				font-size:$rM;
-				height: 200px;
-				margin: 1%;
+				height: 35vh;
 				background-color:$lila;
+				padding-bottom: 1%;
+				padding-top: 1%;
 				border: $bordeAside;
 			}
 		}
 
-			div{
-				@include d-flex(row, space-between, center,);
-				height: 100vh;
-				flex-wrap: nowrap;
-				width: $w-100;
-				padding: 1%;
-				margin: 2%;
-
-				.imgL {
-					width: $imgL;
-					@include d-flex(row, center, flex-end);
-				}
-				.imgM {
-					width: $imgL;
-					@include d-flex(row, center, center);
-				}
-				.imgS {
-					width: $imgS;
-					@include d-flex(row, center, center);
-				}
+		.imgL {
+			width: $imgL;
+			margin-top: 1%;
+		}
+		
+		.twoI{
+			@include d-flex(row-reverse, center, center);
+			flex-wrap: nowrap;	
+			width: $w-100;	
+			.imgM {
+				width: $imgL;
 			}
+			.imgS {
+				width: $imgS;
+			}
+		}
+
 	}
 
 }

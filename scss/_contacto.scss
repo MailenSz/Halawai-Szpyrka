@@ -1,27 +1,28 @@
 // MAIN
 .mainContacto{
-	@include d-flex(column, space-between, center);
+	@include d-flex(row, center, center);
+	flex-wrap: wrap;
 	width: $w-100;
 
 	section{
 		@include d-flex(row, center, center);
 		flex-wrap: nowrap;
-		width: $w-100;
-		background-color: $lila;
 		
 		article{
-			@include d-flex(row, center, center);
-			background-color: $lila;
-			flex-wrap: wrap;	
+			.card{
+				@include d-flex(row, center, center);
+				width: $w-75;
+			}
+			background-color: $lila;	
 
 			img{
-				width: $w-75;
+				width: $w-100;
 			}
 
 			ul{
 				text-align: center;
 				font-size: $rM;
-				width: $w-75;
+				width: $w-100;
 				li{
 					background-color: $lila;
 					text-decoration: $noDeco;
@@ -37,18 +38,17 @@
 	}
 
 	.contactI{
-		@include d-flex(column, center, center);
-		flex-wrap: nowrap;
+		@include d-flex(row, center, center);
+		flex-wrap: wrap;
 		border-radius: $bordeContacto;
 		background-color: $lima;
-		font-size: $rL;
-		width: $w-100;
-		margin: 0,5%;
+		font-size: $rM;
+		width: $w-50;
 			
 		img{
-		width: $w-30;
-		align-items: center;
-
+			flex-direction: row;
+			justify-content: center;
+			width: $w-75;
 		}
 
 		h3{
@@ -56,20 +56,22 @@
 		}
 
 		small{
-			font-weight: $font700;
+			font-weight: $font600;
 			color: $negro;
 		}
 
 	}
 
 	form{
-		@include d-flex(column, space-between, flex-start);
+		@include d-flex(column, center, flex-start);
 		background-color: $marronLila;
 		width: $w-75;
 		border: $bordeForm;
 	}
 
+
 	div{
 		width: $w-100;
 	}
+
 }

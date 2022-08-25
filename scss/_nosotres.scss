@@ -29,7 +29,7 @@
 			@include d-flex(column, space-evenly, center);
 			background-image: $arenaS;
 			width: $w-30;
-			height: 73vh;
+			height: 80vh;
 			text-decoration: $noDeco;
 			list-style: $noDeco;
 			font-size: $rM;
@@ -39,8 +39,8 @@
 	}
 
 	.carrouselImg{
+		@include d-flex(row, center, center);
 		width: $w-100;
-		padding-bottom: 2%;
-		height: auto;
 	}
+
 }

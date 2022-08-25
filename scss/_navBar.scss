@@ -12,7 +12,7 @@ body{
 	@include d-flex(row, space-between, center);
 	background-color: $mostaza;
 	ul{
-		@include d-flex(row, space-between, center);
+		@include d-flex(column, space-between, center);
 		li{
 			list-style: $noDeco;
 			&:hover{

@@ -5,6 +5,12 @@
 
 // INDEX + FOOTER
 @media (max-width: 768px) {
+	.header{
+		width: $w-100;
+		h2{
+			font-size: $rL;
+		}
+	}
 	.containerGrid {
 		background-image: $arenaS;
 		background-repeat: repeat;
@@ -19,16 +25,12 @@
 			display: flex;
 
 			img{
-				display: flex;
+				@include d-flex(row, center, center);
 				font-size: $imgM;
 			}
 
 			.aside p{
-				font-size:$rS;
-				font-weight: $font400;
-				color: $pink;
-				margin: 1%;
-				background-image: $agua;
+				display: $noDeco;
 			}
 
 			.twoI{
@@ -41,113 +43,62 @@
 		background-image: $arenaS;
 		background-repeat: repeat;
 	}
-//FOTER
-	footer{
-		@include d-flex(row, space-between, center);
-		background-image: $arenaS;
-		background-repeat: repeat;
-		& i:hover{
-			background-color: $rosaFuria;
-		}
 
-		h4{
-			justify-content: flex-start;
-		}
-
-		.final{
-			flex-direction: row;
-			justify-content: space-between;
-					
-			i{
-				justify-content: flex-start;
-			}
-
-			p{
-				font-size: $rS;
-				font-weight: $font400;
-				justify-content: flex-end;
-				align-items: flex-end;
-			}
-
-		}	
-	}
 
 //PROMOS
-	.mainPromo .container{
-		display: flex;
-		background-image: $palmera;
-		background-repeat: repeat;
+	.mainPromo{
+		article p{
+			@include d-flex(row, center, center);
+			width: $w-100;
+			font-size: $rM;
+			font-weight: $font600;
+		}
 
-		img{
+		div p{
 			display: $noDeco;
 		}
 
-		p{
-			width: $w-100;
-			justify-content: center;
-			align-items: center;
+		.papas{
+			display: $noDeco;
 		}
 	}
 
-//NOS
+//NOSS
 	.mainNos{
-		display: flex;
-		flex-direction: column;
+		@include d-flex(column, center, center);
 
 		section{
-			display: flex;
-			flex-direction: column;
-
 			ul{
 				display: $noDeco;
 			}
 
-			p{
+			div p{
 				display: $noDeco;
 			}
-		}
 	}
+}
 
 //CONTACTO
 	.mainContacto{
+		@include d-flex(column, center, center);
 		background-image: $arenaS;
 		background-repeat: repeat;
-		display: flex;
-		flex-direction: column;	
 
-		.contactO{
-			flex-direction: row;
-			flex-wrap: wrap;
-			background-color: $pink;
-			font-size: $rS;
-			align-content: center;
+		img{
+			font-size: $imgS;
+		}
 
-			ul{
-				font-size: $w-50;
+		.smallNot{
+			font-size: $rXL;
+			& p{
+				font-size: $rLL;
 			}
+		}
 
-			h3{
-				display: $noDeco;
-			}
-
-		   	p{
-			   	width: $w-50;
-				font-size: $rM;
-			}
-
-			img{
-				width: $w-50;
-			}
-
-			form{
-				width: 85%;
-				font-size: $rS;
-				flex-direction: row;
-				align-content: space-between;
-			}
-
-		}		
-
+		form{
+			width: $w-75;
+			font-size: $rM;
+		}	
 	}
 
 }
@@ -155,11 +106,10 @@
 /*dispositivos tipo CELS - CHICOS*/
 //INDEX
 @media (max-width: 375px) {
-	header{
-		text-align: center;
-		margin: $rS;
+	.header{
+		width: $w-100;
 		h2{
-			font-size: $rXS;
+			font-size: $rL;
 		}
 	}
 
@@ -186,24 +136,39 @@
 
 //PROMOS
 	.mainPromo{
-		display: flex;
-		flex-direction: column;
+		@include d-flex(column, center, center);
 		article h3{
 			display: $noDeco;
+		}
+		article p{
+			width: $w-50;
+			font-size: $font400;
+			height: 30vh;
 		}
 		div p{
 			display: $noDeco;
 		}
 	}
 
-//CONTACTO
-	.mainContacto{
-		display: flex;
-		img{
-			display: $noDeco;
-		}
+// NOSOTRES
+	.mainNos section div p{
+		width: $w-100;
+		font-size: $rM;
+		font-weight: $font700;
+		color: $negro;
+	}
 
-		h3{
+//CONTACTO
+	.mainContacto section{
+		ul li{
+				width: $w-100;
+				font-size: $rM;
+				font-weight: $font400;
+		}
+		img{
+			width: $w-100;
+		}
+		div{
 			display: $noDeco;
 		}
 	}
@@ -212,7 +177,30 @@
 
 /*dispositivos tipo CELS - MUYCHICOS/pantalla div*/
 @media (max-width: 320px) {
-	.mainContacto .contactI{
+	.header{
+		width: $w-100;
+		h2{
+			font-size: $rM;
+		}
+	}
+// PROMOCIONES
+	.mainPromo{
+		p{
+		display: $noDeco;
+		}
+		div img{
+			width: $rM;
+		}
+	}
+// NOSOTRES
+	.mainNos section{
+		display: $noDeco;
+	}
+
+
+
+// CONTACTO
+	.mainContacto section{
 		display: $noDeco;
 	}
 }

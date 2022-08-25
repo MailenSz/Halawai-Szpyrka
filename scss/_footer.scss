@@ -26,8 +26,8 @@
 		margin: 0;
 	}
 
-	div{
-		@include d-flex(column, center, center);
+	.iFooter{
+		@include d-flex(row, center, center);
 		flex-wrap: wrap;
 		width: $w-100;
 		background-color: $marronLila;
@@ -46,13 +46,14 @@
 				}
 			}
 		}
+	}
 
-		p{
-			@include d-flex(row, right, center);
-			font-size: $rS;
+	.pFooter{
+			@include d-flex(row, center, center);
+			width: $w-100;
+			font-size: $rM;
 			font-weight: $font600;
 			color: $negro; 
-			background-color:$verdeMedio;
+			background-color:$pink;
 		}
-	}
 }
