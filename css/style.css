@@ -227,7 +227,6 @@ body {
 }
 .mainPromo div div {
   display: flex;
-  font-size: 1.5rem;
 }
 .mainPromo div div img {
   display: flex;
@@ -477,10 +476,9 @@ body {
   }
   .mainPromo article p {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     font-size: 1.5rem;
     font-weight: 600;
   }
@@ -513,11 +511,8 @@ body {
   .mainContacto img {
     font-size: 35%;
   }
-  .mainContacto .smallNot {
-    font-size: 2.3rem;
-  }
-  .mainContacto .smallNot p {
-    font-size: 2rem;
+  .mainContacto .contactI {
+    display: none;
   }
   .mainContacto form {
     width: 75%;
@@ -556,7 +551,6 @@ body {
     display: none;
   }
   .mainPromo article p {
-    width: 50%;
     font-size: 400;
     height: 30vh;
   }

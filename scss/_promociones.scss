@@ -42,8 +42,6 @@
 
 		div{
 			display: flex;
-			font-size: $rM;
-
 			img{
 				@include d-flex(row, center, center);
 				font-size: $rXS;

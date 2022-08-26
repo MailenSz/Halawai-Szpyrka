@@ -48,8 +48,7 @@
 //PROMOS
 	.mainPromo{
 		article p{
-			@include d-flex(row, center, center);
-			width: $w-100;
+			@include d-flex(column, center, center);
 			font-size: $rM;
 			font-weight: $font600;
 		}
@@ -88,11 +87,8 @@
 			font-size: $imgS;
 		}
 
-		.smallNot{
-			font-size: $rXL;
-			& p{
-				font-size: $rLL;
-			}
+		.contactI{
+			display: $noDeco;
 		}
 
 		form{
@@ -141,7 +137,6 @@
 			display: $noDeco;
 		}
 		article p{
-			width: $w-50;
 			font-size: $font400;
 			height: 30vh;
 		}
