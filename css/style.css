@@ -551,8 +551,9 @@ body {
     display: none;
   }
   .mainPromo article p {
+    width: 100%;
+    height: 40vh;
     font-size: 400;
-    height: 30vh;
   }
   .mainPromo div p {
     display: none;
@@ -582,12 +583,6 @@ body {
   }
   .header h2 {
     font-size: 1.5rem;
-  }
-  .mainPromo p {
-    display: none;
-  }
-  .mainPromo div img {
-    width: 1.5rem;
   }
   .mainNos section {
     display: none;

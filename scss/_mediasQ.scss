@@ -137,8 +137,10 @@
 			display: $noDeco;
 		}
 		article p{
+			width: $w-100;
+			height: 40vh;
 			font-size: $font400;
-			height: 30vh;
+
 		}
 		div p{
 			display: $noDeco;
@@ -178,21 +180,10 @@
 			font-size: $rM;
 		}
 	}
-// PROMOCIONES
-	.mainPromo{
-		p{
-		display: $noDeco;
-		}
-		div img{
-			width: $rM;
-		}
-	}
 // NOSOTRES
 	.mainNos section{
 		display: $noDeco;
 	}
-
-
 
 // CONTACTO
 	.mainContacto section{
